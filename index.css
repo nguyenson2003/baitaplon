@@ -1,15 +1,7 @@
-html{
-    background-color: white;
-}
 body{
+    background-color: white;
     font-family: "patrick hand",Arial, Helvetica, sans-serif;
-    width: 70%;
-    margin: auto;
-    margin-top: 60px;
-    border-radius: 8px;
     font-size: 20px;
-    background-color: gainsboro;
-    border: 1px black solid;
 }
 nav{
     position: fixed;
@@ -34,9 +26,27 @@ nav ul li a{
     text-decoration: none;
     padding: 10px 20px;
 }
+nav a:hover{
+    background-color: gray;
+}
 #user{
     top:0;
     right: 0;
     position: fixed;
     display: inline-block;
+}
+section{
+    width: 60%;
+    margin: auto;
+    margin-top: 60px;
+    padding: 0 10px;
+    border-radius: 8px;
+    background-color: gainsboro;
+    border: 1px black solid;
+    height: 100vh;
+}
+section h1{
+    font-size: 40px;
+    border-bottom: 1px solid black;
+    margin: 30px 0;
 }
