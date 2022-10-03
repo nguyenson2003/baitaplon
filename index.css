@@ -43,10 +43,14 @@ section{
     border-radius: 8px;
     background-color: gainsboro;
     border: 1px black solid;
-    height: 100vh;
+    min-height: 90vh;
+    height: fit-content;
 }
 section h1{
     font-size: 40px;
     border-bottom: 1px solid black;
     margin: 30px 0;
+}
+section article p{
+    margin: 0;
 }
