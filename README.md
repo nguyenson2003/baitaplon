@@ -1,2 +1,2 @@
 # baitaplon
-https://nguyenson2003.github.io/baitaplon/trang-tru/trang-tru.html
+https://nguyenson2003.github.io/baitaplon/trang-chu/trang-chu.html
