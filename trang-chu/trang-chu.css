@@ -74,9 +74,13 @@ section article{
     margin: 30px 0;
     /* text-transform: capitalize; */
 }
-.main .main-img{
+.main #main-img{
     width: 100%;
 }
+/* .main #contain-main-img{
+    transition: all 1s;
+    overflow: hidden;
+} */
 /* main end*/
 
 /* side start */

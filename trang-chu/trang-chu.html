@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,17 +9,19 @@
     <link rel='stylesheet' type='text/css' media='screen' href='https://fonts.googleapis.com/css?family=Patrick Hand'>
     <link rel="stylesheet" href="trang-chu.css">
 </head>
+
 <body>
     <nav>
         <ul>
             <li><a href="../trang-chu/trang-chu.html">Trang chủ</a></li>
             <li><a href="../phim-dang-chieu/phim-dang-chieu.html">phim đang chiếu</a></li>
-            <li><a href="../gia-ve/gia-ve.html">giá vé</a></li>
-            <li><a href="../thong-tin/thong-tin.html">Thông tin</a></li>
+            <li><a href="../gia-ve/gia-ve.html">phim sắp chiếu</a></li>
+            <li><a href="../thong-tin/thong-tin.html">combo giá vé</a></li>
         </ul>
         <span id="user">
             <ul>
-                <li><a href="../dat-ve/dat-ve.html">Đặt vé online</a><li>
+                <li><a href="../dat-ve/dat-ve.html">Đặt vé online</a>
+                <li>
             </ul>
         </span>
     </nav>
@@ -28,28 +31,50 @@
             <h1>
                 Rạp chiếu phim Thiết Kế Web
             </h1>
-            <img src="imgages/main-content.jpg" alt="main-img" class="main-img">
+            <div id="contain-main-img">
+                <div id="contain-main-img">
+                    <img src="images/main-content.jpg" alt="main-img" id="main-img">
+                </div>
+                <!-- <button onclick="next()">
+                    next
+                </button>
+                <script>
+                    const image = document.getElementById("main-img")
+                    image.setAttribute("cur","1")
+                    function next(){
+                        if(image.getAttribute("cur")==1){
+                            image.src="images/main-content-2.jpg"
+                            image.setAttribute("cur","2")
+                        }else{
+                            image.src="images/main-content.jpg"
+                            image.setAttribute("cur","1")
+                        }
+                        // image.style.width = "50%";
+                    }
+                </script> -->
+            </div>
         </article>
     </section>
     <section class="side">
         <article id="article-search">
             <h1>
-               Tìm kiếm
+                Tìm kiếm
             </h1>
             <form>
                 <input type="text" name="search" id="search" placeholder="Search..">
                 <button type="submit" name="find" id="find"></button>
             </form>
-            
+
         </article>
         <article id="phim-hot">
             <h1>
-               Phim hot
+                Phim hot
             </h1>
-            
-            <div class="item" >
+
+            <div class="item">
                 <a href="../dat-ve/dat-ve.html">
-                    <div class="contain-poster"><img src="imgages/phim-1.jpg" class="poster" alt="sự trỗi dậy của Gru"></div>
+                    <div class="contain-poster"><img src="images/phim-1.jpg" class="poster" alt="sự trỗi dậy của Gru">
+                    </div>
                     <div class="content">
                         <h2 class="title">Minions: Sự trỗi dậy của Gru</h2>
                         <ul class="info">
@@ -60,9 +85,10 @@
                     </div>
                 </a>
             </div>
-            <div class="item" >
+            <div class="item">
                 <a href="../dat-ve/dat-ve.html">
-                    <div class="contain-poster"><img src="imgages/phim-2.jpg" class="poster" alt="sự trỗi dậy của Gru"></div>
+                    <div class="contain-poster"><img src="images/phim-2.jpg" class="poster" alt="sự trỗi dậy của Gru">
+                    </div>
                     <div class="content">
                         <h2 class="title">Nhà có 5 nàng dâu</h2>
                         <ul class="info">
@@ -73,9 +99,10 @@
                     </div>
                 </a>
             </div>
-            <div class="item" >
+            <div class="item">
                 <a href="../dat-ve/dat-ve.html">
-                    <div class="contain-poster"><img src="imgages/phim-3.jpg" class="poster" alt="sự trỗi dậy của Gru"></div>
+                    <div class="contain-poster"><img src="images/phim-3.jpg" class="poster" alt="sự trỗi dậy của Gru">
+                    </div>
                     <div class="content">
                         <h2 class="title">Avatar 1 (chiếu lại)</h2>
                         <ul class="info">
