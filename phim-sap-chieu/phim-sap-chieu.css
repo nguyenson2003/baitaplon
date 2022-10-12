@@ -1,11 +1,8 @@
-html{
-    scroll-behavior: smooth;
-}
 body{
     background-color: gainsboro;
     font-family: "patrick hand",Arial, Helvetica, sans-serif;
     font-size: 20px;
-    min-width: 1000px;
+    min-width: 950px;
 }
 /* nav start */
 nav{
@@ -27,6 +24,7 @@ nav ul{
 }
 nav ul li{
     display: inline-block;
+    position: relative;
 }
 nav ul li a{
     color: white;
@@ -77,13 +75,55 @@ section article{
     margin: 30px 0;
     /* text-transform: capitalize; */
 }
-.main #main-img{
+.main .item{
+    height: 230px;
+    transition: 0.5s;
+    /* border-radius: 8px; */
+    position: relative;
+    margin-top: 10px;
+}
+.main .item:hover{
+    background-color: gainsboro;
+    /* cursor: pointer; */
+}
+.main .item .contain-poster{
+    height: 100%;
+    width: 150px;
+    display: inline-block;
+}
+.main .item .contain-poster img{
+    height: 100%;
     width: 100%;
 }
-/* .main #contain-main-img{
-    transition: all 1s;
-    overflow: hidden;
-} */
+.main .item .content{
+    display: inline-block;
+    vertical-align: top;
+    padding-left: 10px;
+    width: calc(100% - 180px);
+}
+.main .item .content .title{
+    margin: 0;
+    font-size: 27px;
+}
+.main .item .content .info{
+    padding-left: 20px;
+}
+.main .item .trailer{
+    background-color: red;
+    color: white;
+    border: none;
+    font: 20px "patrick hand" ;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    padding: 5px 10px;
+    transition: 0.5s;
+}
+.main .item .trailer:hover{
+    box-sizing: border-box;
+    background-color: orange;
+    cursor: pointer;
+}
 /* main end*/
 
 /* side start */
