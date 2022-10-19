@@ -1,0 +1,21 @@
+@media (max-width: 800px) {
+    .main{
+        width: calc(100% - 20px);
+        margin: 0 10px;
+    }
+    .main .item .contain-poster {
+        width: 40%;
+    }
+    .side{
+        width: calc(100% - 20px);
+        margin: 0 10px;
+    }
+}
+@media (max-width: 440px) {
+    body{
+        font-size: 4vw;
+    }
+    .main .item .content .title{
+        font-size: 7vw;
+    }
+}
