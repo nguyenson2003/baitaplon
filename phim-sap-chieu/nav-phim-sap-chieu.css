@@ -10,6 +10,7 @@ nav {
     width: 100%;
     z-index: 100;
     border-bottom: #222831 3px solid;
+    
 }
 
 nav ul {
@@ -23,6 +24,7 @@ nav ul {
 nav ul li {
     display: inline-block;
     position: relative;
+    
 }
 
 nav ul li a {
@@ -41,5 +43,25 @@ nav a:hover {
     display: flex;
     align-items: center;
 }
+#change-to-light{ 
+    height:100%;
+    width: 48px;
+    padding: 0;
+}
 
+#change-to-light button{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    border: 0;
+    padding: 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
+}
+#change-to-light button img{
+    width: 70%;
+}
 /* nav end *

@@ -28,6 +28,7 @@
     background-color: #505761;
     outline: none;
     font-family: inherit;
+    border: 1px solid black;
 }
 
 #search:focus {

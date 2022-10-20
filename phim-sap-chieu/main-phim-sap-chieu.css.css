@@ -21,6 +21,7 @@
     position: relative;
     margin-top: 10px;
     display: flex;
+    color: #EEEEEE;
 }
 
 .main .item:hover {
@@ -69,7 +70,7 @@
 
 .main .item .trailer:hover {
     box-sizing: border-box;
-    background-color: #379a9f;
+    background-color: #15a4fa;
     cursor: pointer;
 }
 

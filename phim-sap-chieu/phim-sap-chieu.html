@@ -12,9 +12,11 @@
     <link rel="stylesheet" href="main-phim-sap-chieu.css.css">
     <link rel="stylesheet" href="side-phim-sap-chieu.css">
     <link rel="stylesheet" href="mobile-phim-sap-chieu.css">
-
+    <link rel="stylesheet" href="light-mode.css">
+    
 </head>
 <body>
+    
     <nav>
         <ul>
             <li><a href="../trang-chu/trang-chu.html">Trang chủ</a></li>
@@ -25,11 +27,14 @@
             <li><a href="../thong-tin/thong-tin.html">combo giá vé</a></li>
         </ul>
         <span id="user">
-            <ul>
+            <ul style="display: flex;">
+                <script src="change-to-light-mode.js"></script>
+                <li><a id="change-to-light"><button onclick="change_to_light()"><img src="images/light-icon.png"></button></a></li>
                 <li><a href="../dat-ve/dat-ve.html">Đặt vé online</a></li>
             </ul>
         </span>
     </nav>
+    
     <section class="main">
         <article>
             <header>
