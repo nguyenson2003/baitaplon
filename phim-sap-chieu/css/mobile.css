@@ -15,6 +15,9 @@
     body{
         font-size: 4vw;
     }
+    #change-to-light {
+        width: 8vw;
+    }
     .main .item .content .title{
         font-size: 7vw;
     }
