@@ -15,6 +15,9 @@
     body{
         font-size: 4vw;
     }
+    h1{
+        font-size: 10vw !important;
+    }
     #change-to-light {
         width: 8vw;
     }
