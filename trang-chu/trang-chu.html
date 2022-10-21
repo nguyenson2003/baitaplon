@@ -8,12 +8,12 @@
     <title>Document</title>
     <link rel='stylesheet' type='text/css' media='screen' href='https://fonts.googleapis.com/css?family=Patrick Hand'>
     <!-- <link rel="stylesheet" href="trang-chu.css"> -->
-    <link rel="stylesheet" href="chung.css">
-    <link rel="stylesheet" href="nav.css">
-    <link rel="stylesheet" href="main.css">
-    <link rel="stylesheet" href="side.css">
-    <link rel="stylesheet" href="mobile.css">
-    <link rel="stylesheet" href="light-mode.css">
+    <link rel="stylesheet" href="css/chung.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/side.css">
+    <link rel="stylesheet" href="css/mobile.css">
+    <link rel="stylesheet" href="css/light-mode.css">
 
 </head>
 
@@ -27,7 +27,8 @@
         </ul>
         <span id="user">
             <ul style="display: flex;">
-                <li><a id="change-to-light"><button onclick="change_to_light()"><img src="images/light-icon.png"></button></a></li>
+                <li><a id="change-to-light"><button onclick="change_to_light()"><img
+                                src="images/light-icon.png"></button></a></li>
                 <li><a href="../dat-ve/dat-ve.html">Đặt vé online</a></li>
             </ul>
         </span>
@@ -35,31 +36,8 @@
     <div class="behind-nav"></div>
     <section class="main">
         <article>
-            <h1>
-                Rạp chiếu phim Thiết Kế Web
-            </h1>
-            <div id="contain-main-img">
-                <div id="contain-main-img">
-                    <img src="images/main-content.jpg" alt="main-img" id="main-img">
-                </div>
-                <!-- <button onclick="next()">
-                    next
-                </button>
-                <script>
-                    const image = document.getElementById("main-img")
-                    image.setAttribute("cur","1")
-                    function next(){
-                        if(image.getAttribute("cur")==1){
-                            image.src="images/main-content-2.jpg"
-                            image.setAttribute("cur","2")
-                        }else{
-                            image.src="images/main-content.jpg"
-                            image.setAttribute("cur","1")
-                        }
-                        // image.style.width = "50%";
-                    }
-                </script> -->
-            </div>
+            <h1>Rạp chiếu phim Thiết Kế Web</h1>
+            <div id="contain-iframe"><iframe src="main-iframe-img.html" id="main-contain-img"></iframe></div>
         </article>
     </section>
     <section class="side">
@@ -122,8 +100,6 @@
             </div>
         </article>
     </section>
+    <script src="change-to-light-mode.js"></script>
 </body>
-
-<script src="change-to-light-mode.js"></script>
-
 </html>
