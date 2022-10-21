@@ -1,0 +1,20 @@
+
+/* main start*/
+.main {
+    width: 55%;
+    margin-left: 10%;
+    height: fit-content;
+}
+
+.main h1 {
+    color: #a09ddc;
+    font-size: 40px;
+    border-bottom: 1px solid white;
+    margin: 30px 0;
+    /* text-transform: capitalize; */
+}
+.main #main-img{
+    width: 100%;
+}
+
+/* main end*/
