@@ -13,17 +13,66 @@
             position: absolute;
             left: 100%;
             background-attachment: fixed;
-            background-position: inherit;
+            background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
             transition: 2s;
         }
-        #main-img-1{
+
+        #main-img-1 {
             left: 0%;
             background-image: url("images/main-content-1.jpg");
         }
-        #main-img-2{
+
+        #main-img-2 {
             background-image: url("images/main-content-2.jpg");
+        }
+
+        #main-img-3 {
+            background-image: url("images/main-content-3.jpg");
+        }
+        button{
+            position: fixed;
+            cursor: pointer;
+            background: none;
+            border: none;
+            width: 8%;
+            transition: 0.2s;
+        }
+        button:hover{
+            width: 15%;
+        }
+        #back {
+            left: 0;
+            top: 0;
+            bottom: 0;
+            background-image: linear-gradient(90deg,black,rgba(0, 0, 0, 0));
+            padding: 0 0 0 4vw;
+        }
+        #next {
+            top: 0;
+            right: 0;
+            bottom: 0;
+            background-image: linear-gradient(-90deg,black,rgba(0, 0, 0, 0));
+            padding: 0 4vw 0 0;
+        }
+        .arrow{
+            width: 5vw;
+            height: 5vw;
+            border-top: 1vw solid white;
+            border-left: 1vw solid white;
+            transition: 0.2s;
+        }
+        button:hover .arrow{
+            width: 6vw;
+            height: 6vw;
+        }
+        #left{
+            transform: rotate(-45deg);
+        }
+        #right{
+            transform: rotate(135deg);
+            float: right;
         }
     </style>
 </head>
@@ -31,18 +80,31 @@
 <body>
     <div class="main-img" id="main-img-1"></div>
     <div class="main-img" id="main-img-2"></div>
-    <button onclick="next()" style="position: fixed; cursor: pointer;">next</button>
+    <div class="main-img" id="main-img-3"></div>
+    <button onclick="back()" id="back"><div class="arrow" id="left"></div></button>
+    <button onclick="next()" id="next"><div class="arrow" id="right"></div></button>
     <script>
         var a = document.getElementsByClassName("main-img");
         var n = a.length;
         var cur = 0;
-        const image = document.getElementById("main-img-2")
+        var time_out = setTimeout(next, 5000);
         function next() {
-            cur+=1;
-            cur%=n;
-            if(cur!=0)image.style.left="0%";
-            else image.style.left="100%";
+            cur += 1;
+            cur %= n;
+            if (cur != 0) a[cur].style.left = "0%";
+            else for (let i = 1; i < a.length; i++) a[i].style.left = "100%";
+            clearTimeout(time_out);
+            time_out = setTimeout(next, 5000);
         }
+        function back() {
+            if (cur != 0) a[cur].style.left = "100%";
+            else for (let i = 1; i < a.length; i++) a[i].style.left = "0%";
+            cur -= 1;
+            cur = (cur + n) % n;
+            clearTimeout(time_out);
+            time_out = setTimeout(next, 5000);
+        }
+
     </script>
 </body>
 
