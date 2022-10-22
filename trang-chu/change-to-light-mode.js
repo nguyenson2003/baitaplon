@@ -14,6 +14,10 @@ function change_to_light() {
     var body = document.body;
     //body
     body.classList.toggle("light-body");
+    var title=body.getElementsByTagName("h2");
+    for (let j = 0; j < title.length; j++) {
+        title[j].classList.toggle("light-h2");
+    }
     //nav
     var nav = document.getElementsByTagName("nav");
     nav[0].classList.toggle("light-nav");
@@ -27,18 +31,14 @@ function change_to_light() {
     //main
     var main = document.getElementsByClassName("main");
     for (let i = 0; i < main.length; i++) {
-        var main_item_title=main[i].getElementsByClassName("title");
-        for (let j = 0; j < main_item_title.length; j++) {
-            main_item_title[j].classList.toggle("light-main-item-title");
-        }
         
         var main_item=main[i].getElementsByClassName("item");
-        for (let j = 0; j < main_item_title.length; j++) {
+        for (let j = 0; j < main_item.length; j++) {
             main_item[j].classList.toggle("light-main-item");
         }
 
         var main_item_trailer=main[i].getElementsByClassName("trailer");
-        for (let j = 0; j < main_item_title.length; j++) {
+        for (let j = 0; j < main_item_trailer.length; j++) {
             main_item_trailer[j].classList.toggle("light-main-item-trailer");
         }
     }
@@ -52,8 +52,6 @@ function change_to_light() {
     
     for (let i = 0; i < phimhot_item.length; i++) {
         phimhot_item[i].classList.toggle("light-phim-hot-item");
-
-        phimhot_item[i].getElementsByClassName("title")[0].classList.toggle("light-phim-hot-item-title");
 
         phimhot_item[i].getElementsByTagName("a")[0].classList.toggle("light-phim-hot-item-a");
     }

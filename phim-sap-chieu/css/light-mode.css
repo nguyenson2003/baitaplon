@@ -15,14 +15,14 @@
     color: #0166e2 !important;
     border-bottom: black 1px solid !important;
 }
+.light-h2{
+    color: #15a4fa !important;
+}
 .light-main-item{
     color: black !important;
 }
 .light-main-item:hover{
     background-color: gainsboro !important;
-}
-.light-main-item-title{
-    color: #15a4fa !important;
 }
 .light-main-item-trailer{
     background-color: #15a4fa !important;
@@ -40,9 +40,6 @@
 }
 .light-phim-hot-item:hover{
     background-color: gainsboro !important;
-}
-.light-phim-hot-item-title{
-    color: #15a4fa !important;
 }
 .light-phim-hot-item-a{
     color: black !important;
