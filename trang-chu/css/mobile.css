@@ -12,6 +12,9 @@
     }
 }
 @media (max-width: 440px) {
+    nav ul li a{
+        padding: 1vw 3vw;
+    }
     body{
         font-size: 4vw;
     }
