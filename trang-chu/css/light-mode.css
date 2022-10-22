@@ -24,11 +24,8 @@
 .light-main-item:hover{
     background-color: gainsboro !important;
 }
-.light-main-item-trailer{
-    background-color: #15a4fa !important;
-}
-.light-main-item-trailer:hover{
-    background-color: #7a78a8 !important;
+.light-main-h2{
+    border-bottom: 1px solid black !important;
 }
 .light-search{
     background-color: gainsboro !important;

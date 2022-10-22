@@ -1,30 +1,37 @@
 @media (max-width: 800px) {
     .main{
         width: calc(100% - 20px);
-        margin: 0 10px;
+        margin: 0 10px ;
     }
-    .main .item .contain-poster {
-        width: 40%;
+    .main .item{
+        margin: 2% !important;
     }
     .side{
-        width: calc(100% - 20px);
-        margin: 0 10px;
+        width: calc(100% - 20px) !important;
+        margin: 0 10px !important;
     }
+    .main .item .content h3{
+        font-size: 3vw !important;
+    }
+    
 }
 @media (max-width: 440px) {
     nav ul li a{
-        padding: 1vw 3vw;
+        padding: 1vw 3vw !important;
     }
     body{
-        font-size: 4vw;
-    }
-    h1{
-        font-size: 10vw !important;
+        font-size: 4vw !important;
     }
     #change-to-light {
-        width: 8vw;
+        width: 8vw !important;
     }
-    .main .item .content .title{
-        font-size: 7vw;
+    h1{
+        font-size: 9vw !important;
+    }
+    h2{
+        font-size: 6vw !important;
+    }
+    .main .item .content h3{
+        font-size: 4vw !important;
     }
 }
