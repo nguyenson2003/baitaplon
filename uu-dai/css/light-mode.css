@@ -1,6 +1,8 @@
 .light-body{
-    background-color: gainsboro !important;
     color: black !important;
+}
+.light-background{
+    opacity: 1 !important;
 }
 .light-nav{
     background-color: rgb(65, 65, 65) !important;

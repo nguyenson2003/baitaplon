@@ -16,6 +16,7 @@
     
 </head>
 <body>
+    <div id="light"></div>
     <nav>
         <ul>
             <li><a href="../trang-chu/trang-chu.html">Trang chủ</a></li>
@@ -45,7 +46,7 @@
                             <li>Miễn phí 70% giá vé trẻ em và 30% giá vé người lớn tại tất cả các rạp chiếu phim TKW. Sự kiện diễn ra vào các ngày thứ 3, thứ 6 và thứ 7 của tháng 11.</li>
                         </ul>
                     </div>
-                    <a class="trailer">Nhận</a>
+                    <button class="trailer" onclick="change(this)">Nhận</button>
                 </div>
                 <div class="item">
                     <div class="content">
@@ -54,7 +55,7 @@
                             <li>Giảm giá 20% khi mua một vé đôi và một Combo SUPER-TKW (2 nước lớn và 2 bỏng lớn). Sự kiện khuyến mãi diễn ra từ ngày 19/10 đến ngày 23/10</li>
                         </ul>
                     </div>
-                    <a class="trailer">Nhận</a>
+                    <button class="trailer" onclick="change(this)">Nhận</button>
                 </div>
             </div>
             <div class="box">
@@ -65,7 +66,7 @@
                             <li>(Dành cho 100 khách hàng đầu tiên đặt vé) Giảm giá 20.000đ khi đặt một vé Online và một Combo TKW (gồm 1 nước vừa và 1 bỏng vừa)</li>
                         </ul>
                     </div>
-                    <a class="trailer">Nhận</a>
+                    <button class="trailer" onclick="change(this)">Nhận</button>
                 </div>
                 <div class="item">
                     <div class="content">
@@ -74,11 +75,10 @@
                             <li>Đồng giá vé 80.000đ/vé đôi tại tất cả các rạp chiếu phim TKW. Sự kiện khuyến mãi diễn ra từ ngày 19/10 đến ngày 23/10</li>
                         </ul>
                     </div>
-                    <a class="trailer">Nhận</a>
+                    <button class="trailer" onclick="change(this)">Nhận</button>
                 </div>
             </div>
         </article>
-
     </section>
     <section class="side">
         <article id="article-search">
@@ -144,5 +144,9 @@
 </body>
 
 <script src="change-to-light-mode.js"></script>
-
+<script>
+    function change(e){
+        e.innerHTML = "Đã nhận";
+    }
+</script>
 </html>

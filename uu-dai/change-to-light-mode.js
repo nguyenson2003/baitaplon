@@ -14,6 +14,7 @@ function change_to_light() {
     var body = document.body;
     //body
     body.classList.toggle("light-body");
+    document.getElementById("light").classList.toggle("light-background");
     var title=body.getElementsByTagName("h2");
     for (let j = 0; j < title.length; j++) {
         title[j].classList.toggle("light-h2");
@@ -31,15 +32,13 @@ function change_to_light() {
     //main
     var main = document.getElementsByClassName("main");
     for (let i = 0; i < main.length; i++) {
-        
+        let main_h2 = main[i].getElementsByTagName("h2");
+        for (let j = 0; j < main_h2.length; j++) {
+            main_h2[j].classList.toggle("light-main-h2");
+        }
         var main_item=main[i].getElementsByClassName("item");
         for (let j = 0; j < main_item.length; j++) {
             main_item[j].classList.toggle("light-main-item");
-        }
-
-        var main_item_trailer=main[i].getElementsByClassName("trailer");
-        for (let j = 0; j < main_item_trailer.length; j++) {
-            main_item_trailer[j].classList.toggle("light-main-item-trailer");
         }
     }
     //search
