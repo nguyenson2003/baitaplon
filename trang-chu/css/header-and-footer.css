@@ -9,9 +9,37 @@ header #logo{
 }
 footer{
     width: 100%;
-    text-align: center;
-    font-size: 1.5vw;
+    display: flex;
     background-color: #414141;
     border-top: 1px solid black;
     color: white;
+}
+footer h2{
+    margin: 10px;
+    font-size: 2.5vw;
+}
+footer ul{
+    font-size: 18px;
+    margin: 10px;
+    margin-left: 8vw;
+    padding: 0;
+}
+footer p{
+    margin-left: 8vw;
+    font-size: 18px;
+}
+footer :nth-child(n){
+    flex: 1 1 0;
+}
+footer .contact ul li{
+    display: block;
+}
+footer .contact #media{
+    display: flex;
+    height: 40px;
+    width: fit-content;
+}
+footer .contact #media img{
+    height: 30px;
+    margin: 5px;
 }
