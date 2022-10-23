@@ -1,12 +1,14 @@
 <base target="_parent">
 <html>
+
 <head>
     <style>
-        html{
+        html {
             width: 100vw;
             height: 100vh;
             overflow: hidden;
         }
+
         body {
             position: relative;
             margin: 0;
@@ -39,7 +41,16 @@
         #main-img-3 {
             background-image: url("images/main-content-3.jpg");
         }
-        button{
+
+        #main-img-4 {
+            background-image: url("images/main-content-4.jpg");
+        }
+
+        #main-img-5 {
+            background-image: url("images/main-content-5.jpg");
+        }
+
+        button {
             position: fixed;
             cursor: pointer;
             background: none;
@@ -47,38 +58,45 @@
             width: 8%;
             transition: 0.2s;
         }
-        button:hover{
+
+        button:hover {
             width: 15%;
         }
+
         #back {
             left: 0;
             top: 0;
             bottom: 0;
-            background-image: linear-gradient(90deg,black,rgba(0, 0, 0, 0));
+            background-image: linear-gradient(90deg, black, rgba(0, 0, 0, 0));
             padding: 0 0 0 4vw;
         }
+
         #next {
             top: 0;
             right: 0;
             bottom: 0;
-            background-image: linear-gradient(-90deg,black,rgba(0, 0, 0, 0));
+            background-image: linear-gradient(-90deg, black, rgba(0, 0, 0, 0));
             padding: 0 4vw 0 0;
         }
-        .arrow{
+
+        .arrow {
             width: 5vw;
             height: 5vw;
             border-top: 1vw solid white;
             border-left: 1vw solid white;
             transition: 0.2s;
         }
-        button:hover .arrow{
+
+        button:hover .arrow {
             width: 6vw;
             height: 6vw;
         }
-        #left{
+
+        #left {
             transform: rotate(-45deg);
         }
-        #right{
+
+        #right {
             transform: rotate(135deg);
             float: right;
         }
@@ -86,11 +104,27 @@
 </head>
 
 <body>
-    <a href="../phim-sap-chieu/phim-sap-chieu.html"><div class="main-img" id="main-img-1"></div></a>
-    <div class="main-img" id="main-img-2"></div>
-    <div class="main-img" id="main-img-3"></div>
-    <button onclick="back()" id="back"><div class="arrow" id="left"></div></button>
-    <button onclick="next()" id="next"><div class="arrow" id="right"></div></button>
+    <a href="../phim-sap-chieu/phim-sap-chieu.html">
+        <div class="main-img" id="main-img-1"></div>
+    </a>
+    <a href="../phim-dang-chieu/phim-dang-chieu.html">
+        <div class="main-img" id="main-img-2"></div>
+    </a>
+    <a href="../uu-dai/uudai.html">
+        <div class="main-img" id="main-img-3"></div>
+    </a>
+    <a href="../phim-dang-chieu/phim-dang-chieu.html">
+        <div class="main-img" id="main-img-4"></div>
+    </a>
+    <a href="../uu-dai/uudai.html">
+        <div class="main-img" id="main-img-5"></div>
+    </a>
+    <button onclick="back()" id="back">
+        <div class="arrow" id="left"></div>
+    </button>
+    <button onclick="next()" id="next">
+        <div class="arrow" id="right"></div>
+    </button>
     <script>
         var a = document.getElementsByClassName("main-img");
         var n = a.length;

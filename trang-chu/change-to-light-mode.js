@@ -14,6 +14,7 @@ function change_to_light() {
     var body = document.body;
     //body
     body.classList.toggle("light-body");
+    document.getElementById("light").classList.toggle("light-background");
     var title=body.getElementsByTagName("h2");
     for (let j = 0; j < title.length; j++) {
         title[j].classList.toggle("light-h2");

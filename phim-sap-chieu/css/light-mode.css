@@ -1,6 +1,9 @@
 .light-body{
     color: black !important;
 }
+.light-background{
+    opacity: 1 !important;
+}
 .light-nav{
     background-color: rgb(65, 65, 65) !important;
     color: white !important;
