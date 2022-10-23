@@ -2,6 +2,7 @@ header{
     display: flex;
     background: #222831;
     font-size: 2.5vw;
+    color: white;
 }
 header #logo{
     width: 2.5vw;

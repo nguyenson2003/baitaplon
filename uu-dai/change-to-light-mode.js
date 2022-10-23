@@ -41,17 +41,17 @@ function change_to_light() {
             main_item[j].classList.toggle("light-main-item");
         }
     }
-    //search
-    var search = document.getElementById("search");
-    search.classList.toggle("light-search");
-    //phim hot
-    var phimhot = document.getElementById("phim-hot");
+    // //search
+    // var search = document.getElementById("search");
+    // search.classList.toggle("light-search");
+    // //phim hot
+    // var phimhot = document.getElementById("phim-hot");
    
-    var phimhot_item = phimhot.getElementsByClassName("item");
+    // var phimhot_item = phimhot.getElementsByClassName("item");
     
-    for (let i = 0; i < phimhot_item.length; i++) {
-        phimhot_item[i].classList.toggle("light-phim-hot-item");
+    // for (let i = 0; i < phimhot_item.length; i++) {
+    //     phimhot_item[i].classList.toggle("light-phim-hot-item");
 
-        phimhot_item[i].getElementsByTagName("a")[0].classList.toggle("light-phim-hot-item-a");
-    }
+    //     phimhot_item[i].getElementsByTagName("a")[0].classList.toggle("light-phim-hot-item-a");
+    // }
 }

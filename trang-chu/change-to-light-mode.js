@@ -42,8 +42,8 @@ function change_to_light() {
         }
     }
     //search
-    var search = document.getElementById("search");
-    search.classList.toggle("light-search");
+    // var search = document.getElementById("search");
+    // search.classList.toggle("light-search");
     //phim hot
     var phimhot = document.getElementById("phim-hot");
    
