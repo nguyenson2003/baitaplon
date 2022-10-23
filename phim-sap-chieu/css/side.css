@@ -122,5 +122,16 @@
     /* display: inline; */
     color: red;
 }
-
+/* ưu đãi */
+#uu-dai .contain-poster{
+    width: 100%;
+    text-align: center;
+}
+#uu-dai img{
+    width: 90%;
+    transition: 0.5s;
+}
+#uu-dai img:hover{
+    width: 100%;
+}
 /* side end */

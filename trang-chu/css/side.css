@@ -11,14 +11,13 @@
 }
 
 /* search */
-#article-search form {
+/* #article-search form {
     position: relative;
     margin: 10px;
 }
 
 #search {
     width: 100%;
-    /* width: calc(100% - 5px); */
     border-radius: 20px;
     font-size: 20px;
     transition: 0.5s;
@@ -46,12 +45,11 @@
     background-repeat: no-repeat;
     background-size: 20px 20px;
     background-position: 5px 0px;
-    /* display: none; */
     transition: 0.5s;
     border: none;
     border-left: 1px solid gray;
     box-sizing: content-box;
-}
+} */
 
 /* phim hot */
 #phim-hot .item {
@@ -115,5 +113,16 @@
     /* display: inline; */
     color: red;
 }
-
+/* ưu đãi */
+#uu-dai .contain-poster{
+    width: 100%;
+    text-align: center;
+}
+#uu-dai img{
+    width: 90%;
+    transition: 0.5s;
+}
+#uu-dai img:hover{
+    width: 100%;
+}
 /* side end */

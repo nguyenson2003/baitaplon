@@ -8,8 +8,10 @@ body {
     background-image: linear-gradient(-135deg,#191e3c, #5b4f63);
     position: relative;
 }
-
-/* section  */
+a{
+    text-decoration: none;
+    color: white;
+}
 section {
     display: inline-block;
     vertical-align: top;
