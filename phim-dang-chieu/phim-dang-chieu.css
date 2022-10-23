@@ -1,57 +1,222 @@
-body{
-    background-color: gainsboro;
-    font-family: "patrick hand",Arial, Helvetica, sans-serif;
-    font-size: 20px;
+* {
+    padding: 0;
+    margin: 0;
 }
-nav{
-    position: fixed;
+nav {
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
     top: 0px;
     left: 0px;
     right: 0px;
-    background-color: rgb(65, 65, 65);
-    color: white;
+    background-color: #393E46;
+    width: 100%;
+    z-index: 100;
+    border-bottom: #222831 3px solid;
+    
 }
-nav ul{
+
+nav ul {
+    width: fit-content;
     margin: 0 0 0 -5px;
     padding: 0;
     text-align: left;
     text-transform: uppercase;
 }
-nav ul li{
+
+nav ul li {
     display: inline-block;
+    position: relative;
+    
 }
-nav ul li a{
-    color: white;
+
+nav ul li a {
+    color: #EEEEEE;
     display: inline-block;
     text-decoration: none;
     padding: 10px 20px;
+    transition: 0.5s;
 }
-nav a:hover{
+
+nav a:hover {
     background-color: gray;
 }
-#user{
-    top:0;
-    right: 0;
-    position: fixed;
-    display: inline-block;
+
+#user {
+    display: flex;
+    align-items: center;
 }
-section{
-    width: 60%;
+#change-to-light{ 
+    height:100%;
+    width: 48px;
+    padding: 0;
+}
+
+#change-to-light button{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    border: 0;
+    padding: 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
+}
+#change-to-light button img{
+    width: 50%;
+}
+body {
+    background: url(./images/tải\ xuống.jpg);
+    background-size: cover;
+    font-family: Patrick Hand;
+}
+
+.main {
+    display: flex;
+}
+
+.wp_content {
+    flex-basis: 80%;
+
+}
+
+.sidebar {
+    flex-basis: 20%;
+    float: right;
+}
+
+div.header {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+    margin-top: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+div.header a {
+    color: white;
+    text-decoration: none;
+    border-bottom: 1px solid white;
+    padding: 10px;
+}
+
+div.header a:hover {
+    color: aqua;
+}
+
+div.header a:nth-of-type(2) {
+    color: rgb(240, 240, 90);
+    text-decoration: none;
+    border-bottom: 5px solid rgb(240, 240, 90);
+}
+
+.wp_content {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+    grid-gap: 0 10px;
+    margin-top: 30px;
+}
+
+.content {
     margin: auto;
-    margin-top: 60px;
-    padding: 0 10px;
-    border-radius: 8px;
-    background-color: white;
-    border: 1px black solid;
-    min-height: 89vh;
-    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-section h1{
-    font-size: 40px;
-    border-bottom: 1px solid black;
-    margin: 30px 0;
-    /* text-transform: capitalize; */
+.background {
+    background-size: cover !important;
+    height: 295px;
+    width: 230px;
 }
-section article p{
-    margin: 0;
+
+.backgroud-1 {
+    background: url(./images/HO00002494.jpg);
+    text-align: center;
 }
+
+.backgroud-2 {
+    background: url(./images/HO00002503.jpg);
+}
+
+.backgroud-3 {
+    background: url(./images/HO00002512.jpg);
+}
+
+.backgroud-4 {
+    background: url(./images/HO00002517.jpg);
+}
+
+.backgroud-5 {
+    background: url(./images/HO00002520.jpg);
+}
+
+.backgroud-6 {
+    background: url(./images/HO00002524.jpg);
+}
+
+.background-animation {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: ease-in-out 0.2s;
+}
+.background-animation:hover {
+    background: black;
+    opacity: 75%;
+    transition: ease-in-out 0.2s;
+}
+
+.background-animation a {
+    display: none;
+    transition: ease-in-out 0.2s;
+}
+.background-animation:hover > a {
+    display: block;
+    transition: ease-in-out 0.2s;
+    border: 1px solid white;
+    text-decoration: none;
+    color: white;
+    padding: 10px 10px;
+}
+.background-animation a:hover{
+    background-color: rgb(230, 25, 25);
+}
+.combo img {
+    margin-top: 30px;
+    height: 675px;
+    width: 100%;
+    border: 10px solid rgb(207, 122, 11);
+    border-right: none;
+}
+
+img:hover {
+    transform: scale(1.05);
+}
+
+.content h1 {
+    font-family: Patrick Hand;
+    margin-top: 10px;
+    max-width: 230px;
+    height: 100px;
+    color: white;
+    font-size: 25px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+/* .content h1:first-of-type{
+    font-family:sans-serif;
+    color: rgb(12, 124, 124);
+    font-size: 30px;
+    margin: 10px 0;
+    padding: 0 15px;
+}
+.content h2{
+    padding: 0 15px;
+} */

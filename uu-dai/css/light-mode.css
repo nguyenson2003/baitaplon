@@ -1,0 +1,46 @@
+.light-body{
+    background-color: gainsboro !important;
+    color: black !important;
+}
+.light-nav{
+    background-color: rgb(65, 65, 65) !important;
+    color: white !important;
+    border-bottom   : rgb(65, 65, 65) 3px solid !important;
+}
+.light-article{
+    background-color: white !important;
+    border: 1px black solid !important;
+}
+.light-h1{
+    color: #0166e2 !important;
+    border-bottom: black 1px solid !important;
+}
+.light-h2{
+    color: #15a4fa !important;
+}
+.light-main-item{
+    color: black !important;
+}
+.light-main-item:hover{
+    background-color: gainsboro !important;
+}
+.light-main-item-trailer{
+    background-color: #15a4fa !important;
+}
+.light-main-item-trailer:hover{
+    background-color: #7a78a8 !important;
+}
+.light-search{
+    background-color: gainsboro !important;
+    border: 1px solid gray !important;
+}
+.light-search:focus{
+    background-color: white !important;
+    border: 1px solid gray !important;
+}
+.light-phim-hot-item:hover{
+    background-color: gainsboro !important;
+}
+.light-phim-hot-item-a{
+    color: black !important;
+}

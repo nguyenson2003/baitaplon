@@ -1,0 +1,76 @@
+
+/* main start*/
+.main {
+    width: 55%;
+    margin-left: 10%;
+    height: fit-content;
+}
+
+.main h1 {
+    font-size: 40px;
+    border-bottom: 1px solid white;
+    margin: 30px 0;
+    /* text-transform: capitalize; */
+}
+
+.main .item {
+    height: fit-content;
+    transition: 0.5s;
+    /* border-radius: 8px; */
+    position: relative;
+    margin-top: 10px;
+    display: flex;
+    color: #EEEEEE;
+}
+
+.main .item:hover {
+    background-color: #444a54;
+    /* cursor: pointer; */
+}
+
+.main .item .contain-poster {
+    height: 100%;
+    width: 23%;
+    max-width: 170px;
+}
+
+.main .item .contain-poster img {
+    height: 100%;
+    width: 100%;
+}
+
+.main .item .content {
+    padding-left: 10px;
+    margin-bottom: 40px;
+}
+
+.main .item .content .title {
+    margin: 0;
+    font-size: 27px;
+    color: #a09ddc;
+}
+
+.main .item .content .info {
+    padding-left: 20px;
+}
+
+.main .item .trailer {
+    background-color: #7a78a8;
+    color: #EEEEEE;
+    border: none;
+    font: 20px "patrick hand";
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    padding: 5px 10px;
+    transition: 0.5s;
+    border-radius: 5px;
+}
+
+.main .item .trailer:hover {
+    box-sizing: border-box;
+    background-color: #15a4fa;
+    cursor: pointer;
+}
+
+/* main end*/

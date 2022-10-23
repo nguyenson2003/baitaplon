@@ -10,6 +10,21 @@
         width: calc(100% - 20px) !important;
         margin: 0 10px !important;
     }
+    .main h1{
+        font-size: 7vw !important;
+    }
+    .main h2{
+        font-size: 5vw !important;
+    }
+    #phim-hot h1{
+        font-size: 6vw;
+    }
+    #phim-hot h2{
+        font-size: 4vw !important;
+    }
+    #phim-hot li{
+        font-size: 3vw !important;
+    }
     .main .item .content h3{
         font-size: 3vw !important;
     }
@@ -24,12 +39,6 @@
     }
     #change-to-light {
         width: 8vw !important;
-    }
-    h1{
-        font-size: 9vw !important;
-    }
-    h2{
-        font-size: 6vw !important;
     }
     .main .item .content h3{
         font-size: 4vw !important;

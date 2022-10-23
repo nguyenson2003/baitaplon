@@ -55,7 +55,6 @@
 
 /* phim hot */
 #phim-hot .item {
-    min-height: 130px;
     height: fit-content;
     margin-top: 20px;
     transition: 0.5s;
@@ -69,17 +68,17 @@
     display: flex;
     color: #EEEEEE;
     text-decoration: none;
+    align-items: flex-start;
 }
-
 #phim-hot .item .contain-poster {
-    height: 130px;
-    width: 85px;
-    display: inline;
+    width: 25%;
+    max-width: 25%;
+    min-width: 25%;
 }
 
 #phim-hot .item .contain-poster .poster {
-    height: 130px;
-    width: 85px;
+    height: 100%;
+    width: 100%;
 }
 
 #phim-hot .item .content {

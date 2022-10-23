@@ -3,6 +3,7 @@
 .main {
     width: 55%;
     margin-left: 10%;
+    margin-bottom: 10px;
     height: fit-content;
 }
 
@@ -39,12 +40,20 @@
 .main .item {
     transition: 0.5s;
     position: relative;
-    display: flex;
-    flex-direction: column;
     margin: 5px;    
-    align-items: center;
     flex: 1 1 0;
     width: 0;
+}
+.main .item:hover{
+    flex: 1 1 10px;
+}
+.main .item a{
+    color: inherit;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
 }
 .main .item .contain-poster{
     width: 100%;
@@ -59,7 +68,7 @@
     text-overflow: ellipsis;
     overflow: hidden;
     white-space: nowrap;
-    font-size: 1.5vw;
+    font-size: 18px;
 }
 
 /* main end*/

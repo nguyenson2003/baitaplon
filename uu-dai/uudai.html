@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel='stylesheet' type='text/css' media='screen' href='https://fonts.googleapis.com/css?family=Patrick Hand'>
+    <link rel="stylesheet" href="css/chung.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/side.css">
+    <link rel="stylesheet" href="css/mobile.css">
+    <link rel="stylesheet" href="css/light-mode.css">
+    
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="../trang-chu/trang-chu.html">Trang chủ</a></li>
+            <li><a href="../phim-dang-chieu/phim-dang-chieu.html">phim đang chiếu</a></li>
+            <li><a href="../phim-sap-chieu/phim-sap-chieu.html">phim sắp chiếu</a></li>
+        </ul>
+        <span id="user">
+            <ul style="display: flex;">
+                <li><a id="change-to-light"><button onclick="change_to_light()"><img src="images/light-icon.png"></button></a></li>
+                <li><a href="../uu-dai/uudai.html">Combo giá vé</a></li>
+            </ul>
+        </span>
+    </nav>
+    
+    <section class="main">
+        <article>
+            <header>
+                <h1>
+                    Combo giá vé
+                </h1>
+            </header>
+            <div class="box">
+                <div class="item">
+                    <div class="content">
+                        <h2 class="title">KHUYẾN MÃI KỈ NIỆM 1 NĂM THÀNH LẬP</h2>
+                        <ul class="info">
+                            <li>Miễn phí 70% giá vé trẻ em và 30% giá vé người lớn tại tất cả các rạp chiếu phim TKW. Sự kiện diễn ra vào các ngày thứ 3, thứ 6 và thứ 7 của tháng 11.</li>
+                        </ul>
+                    </div>
+                    <a class="trailer">Nhận</a>
+                </div>
+                <div class="item">
+                    <div class="content">
+                        <h2 class="title">KHUYẾN MÃI NGÀY 20/10</h2>
+                        <ul class="info">
+                            <li>Giảm giá 20% khi mua một vé đôi và một Combo SUPER-TKW (2 nước lớn và 2 bỏng lớn). Sự kiện khuyến mãi diễn ra từ ngày 19/10 đến ngày 23/10</li>
+                        </ul>
+                    </div>
+                    <a class="trailer">Nhận</a>
+                </div>
+            </div>
+            <div class="box">
+                <div class="item">
+                    <div class="content">
+                        <h2 class="title">KHUYẾN MÃI KHAI TRƯƠNG</h2>
+                        <ul class="info">
+                            <li>(Dành cho 100 khách hàng đầu tiên đặt vé) Giảm giá 20.000đ khi đặt một vé Online và một Combo TKW (gồm 1 nước vừa và 1 bỏng vừa)</li>
+                        </ul>
+                    </div>
+                    <a class="trailer">Nhận</a>
+                </div>
+                <div class="item">
+                    <div class="content">
+                        <h2 class="title">KHUYẾN MÃI NGÀY 20/10</h2>
+                        <ul class="info">
+                            <li>Đồng giá vé 80.000đ/vé đôi tại tất cả các rạp chiếu phim TKW. Sự kiện khuyến mãi diễn ra từ ngày 19/10 đến ngày 23/10</li>
+                        </ul>
+                    </div>
+                    <a class="trailer">Nhận</a>
+                </div>
+            </div>
+        </article>
+
+    </section>
+    <section class="side">
+        <article id="article-search">
+            <h1>
+                Tìm kiếm
+            </h1>
+            <form>
+                <input type="text" name="search" id="search" placeholder="Search..">
+                <button type="submit" name="find" id="find"></button>
+            </form>
+
+        </article>
+        <article id="phim-hot">
+            <h1>
+                Phim hot
+            </h1>
+            <div class="item">
+                <a href="../dat-ve/dat-ve.html">
+                    <div class="contain-poster"><img src="https://metiz.vn/media/poster_film/minions_2_-_kc_01.7.22_1__rS4UqaS.jpg" class="poster"
+                            alt="sự trỗi dậy của Gru"></div>
+                    <div class="content">
+                        <h2 class="title">Minions: Sự trỗi dậy của Gru</h2>
+                        <ul class="info">
+                            <li>ngày ra mắt: 01/07/2022</li>
+                            <li>thời lượng: 85 phút</li>
+                            <li>tình trạng: <span class="status-good">còn vé</span></li>
+                        </ul>
+                    </div>
+                </a>
+            </div>
+            <div class="item">
+                <a href="../dat-ve/dat-ve.html">
+                    <div class="contain-poster"><img src="https://www.cgv.vn/media/catalog/product/cache/1/image/c5f0a1eff4c394a251036189ccddaacd/0/1/01-qq-_lightbox_poster_-vn_1_.jpg" class="poster"
+                            alt="sự trỗi dậy của Gru">
+                    </div>
+                    <div class="content">
+                        <h2 class="title">Nhà có 5 nàng dâu</h2>
+                        <ul class="info">
+                            <li>ngày ra mắt: 07/10/2022</li>
+                            <li>thời lượng: 136 phút</li>
+                            <li>tình trạng: <span class="status-good">còn vé</span></li>
+                        </ul>
+                    </div>
+                </a>
+            </div>
+            <div class="item">
+                <a href="../dat-ve/dat-ve.html">
+                    <div class="contain-poster"><img src="https://www.cgv.vn/media/catalog/product/cache/1/image/c5f0a1eff4c394a251036189ccddaacd/l/6/l65_coral-rerelease_2009_vietnam_1sht_1_.jpg" class="poster"
+                            alt="sự trỗi dậy của Gru">
+                    </div>
+                    <div class="content">
+                        <h2 class="title">Avatar 1 (chiếu lại)</h2>
+                        <ul class="info">
+                            <li>ngày ra mắt: 22/09/2022</li>
+                            <li>thời lượng: 165 phút</li>
+                            <li>tình trạng: <span class="status-bad">hết vé</span></li>
+                        </ul>
+                    </div>
+                </a>
+            </div>
+        </article>
+    </section>
+</body>
+
+<script src="change-to-light-mode.js"></script>
+
+</html>

@@ -6,6 +6,8 @@ body {
     color: #EEEEEE;
     margin: 0;
     transition: 0.5s;
+    
+    background-image: linear-gradient(-135deg,#191e3c, #5b4f63);
 }
 
 /* section  */
