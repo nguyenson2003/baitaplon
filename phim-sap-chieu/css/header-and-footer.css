@@ -1,0 +1,17 @@
+header{
+    display: flex;
+    background: #222831;
+    font-size: 2.5vw;
+}
+header #logo{
+    width: 2.5vw;
+    margin: 0 1vw;
+}
+footer{
+    width: 100%;
+    text-align: center;
+    font-size: 1.5vw;
+    background-color: #414141;
+    border-top: 1px solid black;
+    color: white;
+}
