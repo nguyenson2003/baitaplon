@@ -46,6 +46,7 @@
 }
 .main .item:hover{
     flex: 1 1 10px;
+    background-color: #444a54;
 }
 .main .item a{
     color: inherit;

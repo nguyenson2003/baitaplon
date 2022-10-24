@@ -37,10 +37,9 @@ footer .contact ul li{
 }
 footer .contact #media{
     display: flex;
-    height: 40px;
     width: fit-content;
 }
 footer .contact #media img{
-    height: 30px;
+    width: 2vw;
     margin: 5px;
 }

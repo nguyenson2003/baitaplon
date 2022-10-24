@@ -11,16 +11,9 @@ body {
     background-image: linear-gradient(-135deg,#191e3c, #5b4f63);
     position: relative;
 }
-#light {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    opacity: 0;
-    transition: 0.5s;
-    background-image: linear-gradient(0deg,#B1B2FF,#EEF1FF) ;
-    z-index: -1;
+a{
+    text-decoration: none;
 }
-/* section  */
 section {
     display: inline-block;
     vertical-align: top;
@@ -45,4 +38,13 @@ h1 {
 
 h2 {
     color: #a09ddc;
+}
+#light {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: 0.5s;
+    background-image: linear-gradient(0deg,#B1B2FF,#EEF1FF) ;
+    z-index: -1;
 }

@@ -1,60 +1,66 @@
 @media (max-width: 800px) {
-    .main{
+    .main {
         width: calc(100% - 20px);
-        margin: 0 10px ;
+        margin: 0 10px;
     }
-    .main .item{
+
+    .main .item {
         margin: 2% !important;
     }
-    .side{
+
+    .side {
         width: calc(100% - 20px) !important;
         margin: 0 10px !important;
     }
-    .main h1{
+
+    h1 {
         font-size: 7vw !important;
     }
-    .main h2{
+
+    h2 {
         font-size: 5vw !important;
     }
-    #phim-hot h1{
-        font-size: 6vw;
-    }
-    #phim-hot h2{
-        font-size: 4vw !important;
-    }
-    #phim-hot li{
+
+    #phim-hot li {
         font-size: 3vw !important;
     }
-    .main .item .content h3{
+
+    .main .item .content h3 {
         font-size: 3vw !important;
     }
-    
-    footer h2{
+
+    footer h2 {
         margin: 1vw;
         font-size: 2.5vw;
     }
-    footer ul{
+
+    footer ul {
         font-size: 2vw;
         margin: 0vw 2vw;
         margin-left: 10vw;
         padding: 0;
     }
-    footer p{
+
+    footer p {
         margin-left: 8vw;
         font-size: 2vw;
     }
 }
+
 @media (max-width: 440px) {
-    nav ul li a{
+    nav ul li a {
         padding: 1vw 3vw !important;
     }
-    body{
+
+    body {
         font-size: 4vw !important;
     }
+
     #change-to-light {
         width: 8vw !important;
     }
-    .main .item .content h3{
+
+    .main .item .content h3 {
         font-size: 4vw !important;
     }
 }
