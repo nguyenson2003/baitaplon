@@ -6,6 +6,7 @@
 
     .main .item .contain-poster {
         width: 30%;
+        min-width: 30%;
     }
 
     #phim-hot .item .contain-poster {

@@ -52,7 +52,7 @@
                             kiện diễn ra vào các ngày thứ 3, thứ 6 và thứ 7 của tháng 11.</li>
                     </ul>
                 </div>
-                <button class="trailer" onclick="change(this)">Nhận</button>
+                <button class="get-combo" onclick="change(this)">Nhận</button>
             </div>
             <div class="item">
                 <div class="contain-poster"><img src="images/post-2.png" alt="poster"></div>
@@ -63,7 +63,7 @@
                             Combo TKW (gồm 1 nước vừa và 1 bỏng vừa)</li>
                     </ul>
                 </div>
-                <button class="trailer" onclick="change(this)">Nhận</button>
+                <button class="get-combo" onclick="change(this)">Nhận</button>
             </div>
             <div class="item">
                 <div class="contain-poster"><img src="images/post-3.png" alt="poster"></div>
@@ -74,7 +74,7 @@
                             kiện khuyến mãi diễn ra từ ngày 19/10 đến ngày 31/10</li>
                     </ul>
                 </div>
-                <button class="trailer" onclick="change(this)">Nhận</button>
+                <button class="get-combo" onclick="change(this)">Nhận</button>
             </div>
             <div class="item">
                 <div class="contain-poster"><img src="images/post-4.png" alt="poster"></div>
@@ -85,7 +85,7 @@
                             từ ngày 19/10 đến ngày 31/10</li>
                     </ul>
                 </div>
-                <button class="trailer" onclick="change(this)">Nhận</button>
+                <button class="get-combo" onclick="change(this)">Nhận</button>
             </div>
         </article>
     </section>
@@ -117,10 +117,38 @@
 
 <script src="change-to-light-mode.js"></script>
 <script>
+    var button_getCombo = document.getElementsByClassName("get-combo");
+    let n = button_getCombo.length;
+    var ck_clicked = sessionStorage.getItem("ck_clicked");
+    console.log(ck_clicked);
+    if (ck_clicked == null) {
+        ck_clicked = []
+        for (let i = 0; i < n; i++) {
+            ck_clicked[i] = 0;
+        }
+    }else{
+        ck_clicked = ck_clicked.split(",",-1);
+    }
+    console.log(ck_clicked);
+    for (let i = 0; i <= n; i++) {
+        // change(button_getCombo[1])
+            console.log(ck_clicked[i])
+        if (ck_clicked[i]==1) {
+            change(button_getCombo[i]);
+        }
+    }
     function change(e) {
         e.innerHTML = "Đã nhận";
         e.style.background = "#15a4fa";
+        for (let i = 0; i < n; i++) {
+            if (button_getCombo[i] == e) {
+                ck_clicked[i] = 1;
+                break;
+            }
+        }
+        sessionStorage.setItem("ck_clicked", ck_clicked);
     }
+
 </script>
 
 </html>

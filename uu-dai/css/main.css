@@ -57,7 +57,7 @@
     padding-left: 20px;
 }
 
-.main .item .trailer {
+.main .item .get-combo {
     background-color: #7a78a8;
     color: #EEEEEE;
     border: none;
@@ -70,7 +70,7 @@
     border-radius: 5px;
 }
 
-.main .item .trailer:hover {
+.main .item .get-combo:hover {
     box-sizing: border-box;
     background-color: #15a4fa;
     cursor: pointer;
