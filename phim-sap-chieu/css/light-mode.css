@@ -1,3 +1,12 @@
+#light {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: 0.5s;
+    background-image: linear-gradient(0deg,#0073d8,#ABD9FF) ;
+    z-index: -1;
+}
 .light-body{
     color: black !important;
 }
@@ -10,7 +19,7 @@
     border-bottom   : rgb(65, 65, 65) 3px solid !important;
 }
 .light-article{
-    background-color: white !important;
+    background-color: #eeeeee !important;
     border: 1px black solid !important;
 }
 .light-h1{

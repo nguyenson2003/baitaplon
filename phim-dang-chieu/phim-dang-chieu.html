@@ -9,10 +9,12 @@
     <link rel="icon" href="images/logo-film.png" type="image/icon type">
     <link rel="stylesheet" href="phim-dang-chieu.css">
     <link rel="stylesheet" href="header-and-footer.css">
+    <link rel="stylesheet" href="light-mode.css">
     <link rel='stylesheet' type='text/css' media='screen' href='https://fonts.googleapis.com/css?family=Patrick Hand'>
 </head>
 
 <body>
+    <div id="light"></div>
     <header>
         <img src="images/logo-film.png" id="logo" alt="">
         Rạp phim nhóm 5
@@ -25,6 +27,13 @@
         </ul>
         <span id="user">
             <ul style="display: flex;">
+                <li>
+                    <a id="change-to-light">
+                        <button onclick="change_to_light()">
+                            <img src="images/light-icon.png">
+                        </button>
+                    </a>
+                </li>
                 <li><a href="../uu-dai/uudai.html">Combo giá vé</a></li>
             </ul>
         </span>
@@ -36,65 +45,65 @@
             <a href="./phimsapchieu.html">phim sắp chiếu</a>
             <a href="./khuyenmai.html">khuyến mãi</a>
         </div> -->
-        <div class="main">
-            <div class="wp_content">
-                <div class="content">
-                    <div class="background backgroud-1">
-                        <div class="background-animation">
-                            <a href="phim/phim1/lovedestiny.html">Hiển Thị</a>
-                        </div>
+    <div class="main">
+        <div class="wp_content">
+            <div class="content">
+                <div class="background backgroud-1">
+                    <div class="background-animation">
+                        <a href="phim/phim1/lovedestiny.html">Hiển Thị</a>
                     </div>
-                    <h1>love destiny the movie</h1>
                 </div>
-                <div class="content">
-                    <div class="background backgroud-2">
-                        <div class="background-animation">
-                            <a href="./phim/phim1/avatar.html">Hiển Thị</a>
-                        </div>
-                    </div>
-                    <h1>avatar</h1>
-                </div>
-                <div class="content">
-                    <div class="background backgroud-3">
-                        <div class="background-animation">
-                            <a href="./phim/phim1/bongdungtrungso.html">Hiển Thị</a>
-                        </div>
-                    </div>
-                    <h1>bỗng dưng trúng số</h1>
-                </div>
-                <div class="content">
-                    <div class="background backgroud-4">
-                        <div class="background-animation">
-                            <a href="./phim/phim1/smile.html">Hiển Thị</a>
-                        </div>
-                    </div>
-                    <h1>smile</h1>
-                </div>
-                <div class="content">
-                    <div class="background backgroud-5">
-                        <div class="background-animation">
-                            <a href="./phim/phim1/the_woman_king.html">Hiển Thị</a>
-                        </div>
-                    </div>
-                    <h1>the women king</h1>
-                </div>
-                <div class="content">
-                    <div class="background backgroud-6">
-                        <div class="background-animation">
-                            <a href="phim/phim1/phim1.html">Hiển Thị</a>
-                        </div>
-                    </div>
-                    <h1>black adam</h1>
-                </div>
+                <h1>love destiny the movie</h1>
             </div>
-            <div class="sidebar">
-                <div class="combo">
-                    <a href="../uu-dai/uudai.html">
-                        <img src="./images/350x495_1.jpg" alt="">
-                    </a>
+            <div class="content">
+                <div class="background backgroud-2">
+                    <div class="background-animation">
+                        <a href="./phim/phim1/avatar.html">Hiển Thị</a>
+                    </div>
                 </div>
+                <h1>avatar</h1>
+            </div>
+            <div class="content">
+                <div class="background backgroud-3">
+                    <div class="background-animation">
+                        <a href="./phim/phim1/bongdungtrungso.html">Hiển Thị</a>
+                    </div>
+                </div>
+                <h1>bỗng dưng trúng số</h1>
+            </div>
+            <div class="content">
+                <div class="background backgroud-4">
+                    <div class="background-animation">
+                        <a href="./phim/phim1/smile.html">Hiển Thị</a>
+                    </div>
+                </div>
+                <h1>smile</h1>
+            </div>
+            <div class="content">
+                <div class="background backgroud-5">
+                    <div class="background-animation">
+                        <a href="./phim/phim1/the_woman_king.html">Hiển Thị</a>
+                    </div>
+                </div>
+                <h1>the women king</h1>
+            </div>
+            <div class="content">
+                <div class="background backgroud-6">
+                    <div class="background-animation">
+                        <a href="phim/phim1/phim1.html">Hiển Thị</a>
+                    </div>
+                </div>
+                <h1>black adam</h1>
             </div>
         </div>
+        <div class="sidebar">
+            <div class="combo">
+                <a href="../uu-dai/uudai.html">
+                    <img src="./images/350x495_1.jpg" alt="">
+                </a>
+            </div>
+        </div>
+    </div>
     </div>
     <footer>
         <div class="member">
@@ -116,7 +125,7 @@
                     <div class="contain-contact">
                         <div>Orther: </div>
                         <a href="https://fb.me/nguyenson0311">
-                            <img src="images/contact-1.png"alt="contact">
+                            <img src="images/contact-1.png" alt="contact">
                         </a>
                         <a href="https://www.instagram.com/nqson123/">
                             <img src="images/contact-2.png" alt="contact">
@@ -129,6 +138,7 @@
             </ul>
         </div>
     </footer>
+    <script src="change-to-light-mode.js"></script>
 </body>
 
 </html>
