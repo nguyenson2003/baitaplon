@@ -1,0 +1,133 @@
+html{
+    font-size: 62,5%;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0 ;
+    background-image: linear-gradient(45deg, rgb(89, 23, 79), rgb(34, 21, 105));
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: auto;
+}
+/* header */
+.header{
+    background-color: #000;
+    display: flex;
+    background-color: #393E46;
+    position: sticky;
+    border-bottom: #222831 3px solid;
+    justify-content: space-between;
+    height: 3rem;
+    margin: -0.8rem -0.5rem 1rem -0.7rem;
+}
+.header ul li{
+    display: inline;
+    list-style: none;
+}
+.header ul li a{
+    text-decoration: none;
+    color: rgb(212, 200, 200);
+    font-size: 1rem;
+    margin-right: 1rem;
+    text-transform: uppercase;
+    padding: 1rem 0;
+}
+
+nav a:hover {
+    background-color: gray;
+    padding: 3rem 0;
+}
+/* anh rap chieu phim */
+img{
+    width: 35rem;
+    height: auto;
+    float: right;
+    padding: 4rem;
+}
+#check #checkghe{
+    padding-bottom: 2rem;
+}
+.content{
+    padding: 4rem;
+}
+.content > h1>a{
+    text-decoration: none;
+    color: black;
+}
+.content >h1>a:hover{
+    color: antiquewhite;
+}
+ul li{
+    list-style: none;
+    font-size: 1.5rem;
+    color: #000;
+    
+}
+ul li a{
+    color: #000;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-left: 5rem;
+    margin-bottom: 5rem;
+    text-align: left;
+    font-weight:bold;
+}
+.nav .subnav{
+    display: none;
+}
+.nav  li{
+    display: block;
+}
+.nav .subnav >li > a{
+    position: absolute;
+    border: 2px solid rgb(15, 14, 14);
+    color: #000;
+    background-image: linear-gradient(45deg, rgb(127, 127, 167), rgb(228, 132, 148));
+    position: relative;
+    font-size:large;
+    padding: 5px;
+    text-decoration: none;
+    border-radius: 10px;
+
+}
+.nav .subnav li{
+    display: inline-table;  
+}
+
+.nav li:hover .subnav{
+    display: block; 
+}
+
+button{
+    background-image: linear-gradient(45deg, rgb(30, 30, 122), rgb(87, 19, 31));
+    padding: 1rem 2rem;
+    border-radius: 19px;
+}
+.last{
+    text-align: center;
+    
+}
+.last a{
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: #000;
+}
+.xacnhan::after{
+    content: "";
+    width: 100%;
+    height: 40rem;
+    background-color: rgba(251, 248, 248, 0.1);
+    opacity: 0.0001;
+    display: flex;
+    
+}
+.footer{
+    background-color: #000;
+    height: 2rem;
+    width: 100%;
+    padding:0.1rem 0.5rem;
+    margin: 0 -0.5rem -0.5rem -0.5rem;
+    
+}
+.footer p{
+    color: aliceblue;
+    text-align: center;
+}

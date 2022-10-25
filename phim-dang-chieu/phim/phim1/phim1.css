@@ -1,0 +1,266 @@
+*{
+    margin: 40px;
+}
+html{
+    margin: 0px;
+    font-size: 62,5%;
+    color: rgb(186, 189, 191);
+    background-image: linear-gradient(45deg, rgb(89, 23, 79), rgb(34, 21, 105));
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+/* header */
+.header{
+    background-color: #000;
+    display: flex;
+    background-color: #393E46;
+    position: sticky;
+    border-bottom: #222831 3px solid;
+    z-index: 100;
+    margin: -2.5rem -2.5rem 0 -4rem;
+    justify-content: space-between;
+    height: 3rem;
+}
+.header ul{
+    width: fit-content;
+    margin: -1.5rem 0  -1rem;
+    padding: 0;
+    text-align: left; 
+    text-transform: uppercase;
+}
+.header ul li {
+    display: inline;
+    top: -10rem;
+    margin-right: -2rem;
+}
+.header ul li a{
+    text-decoration: none;
+    padding: 1rem 0.5rem;
+    color: #eeeeee;
+    transition: 0.5s;
+    
+}
+nav a:hover {
+    background-color: gray;
+    padding: 3rem 0;
+}
+
+/* bat dau phan noi dung */
+.item1{
+    min-height: 100vh;
+    width: 100%;
+    margin: 0 auto;
+}
+.head #goback{
+    margin-top: 20px;
+    font-size: 2rem;
+    text-decoration: none;
+    color: rgb(186, 189, 191);
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif; 
+    float: left;
+    position: relative;
+    background: none;
+    border: none; 
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2.2rem;
+}
+.head #goback::after{
+    position: absolute;
+    content: "";
+    background-color: rgb(186, 189, 191);
+    height: 34px;
+    right: 10px;
+    top: 1.2rem;
+    width: 5px;
+    display: flex;
+    
+}
+.head .name{
+    position: absolute;
+    left:14rem
+}
+.main .pic {
+    padding-top:3rem;
+    margin-left: -6rem;
+    float: left;
+}
+img{
+    vertical-align: middle;
+}
+.pic img{
+    margin-left: -40px;
+    border-radius: 4px;
+}
+
+.main .content h1{
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+.main .content{
+    padding-top: 5rem;
+    font-size: 1.2rem;
+}
+.main .content p{
+    display: block;
+    margin-block-start: 10px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+.main .content table{
+    margin-top: 20px;
+    font-style: bold;
+}
+.PL{
+    padding-left: 0px;
+    text-align: left;
+    
+}
+.C13
+{
+    color: rgb(183, 74, 74);  
+    text-align: left;
+}
+#Ct{
+    text-indent: initial;
+    font-weight: bold;
+}
+.main .content{
+    position: relative;
+}
+.content .linkmain .link1{
+    position: absolute;
+}
+.linkmain a button{
+    text-transform: uppercase;
+}
+button {
+    margin-top: -1rem;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    background-image: linear-gradient(45deg, rgb(68, 68, 208), rgb(134, 43, 58));
+    padding: 1rem 1.3rem;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 12px;
+    transition: all 0.5s;
+    vertical-align: top;
+}
+
+.link1{
+
+    height: 3.3rem;
+    width: 7rem;
+}
+.link1:hover{
+    height: 4rem;
+    width: 8rem;
+}
+
+#link{
+
+    height: 3.3rem;
+    width: 11rem;
+}
+#link:hover{
+    height: 4rem;
+    width: 12rem;
+}
+button a{
+    text-decoration: none;
+    color: black;
+    margin-left: -1rem;
+    margin-right: 0;
+    text-align: center;
+}
+
+/* video */
+#video_trailer h1{
+    text-align: center;
+    position: relative;
+}
+.text-center{
+    text-align: center;
+}
+#video_trailer h1::after{
+    content: "";
+    background-color: rgb(186, 189, 191);
+    height: 0.1rem;
+    width: 100%;
+    display: flex;
+    margin-top:2rem ;
+    margin-bottom: -2rem;
+}
+
+
+/* booking*/
+#book_ticket .booking{
+    text-align: center;
+}
+#book_ticket .booking::after{
+    content: "";
+    background-color: rgb(186, 189, 191);
+    height: 0.1rem;
+    width: 100%;
+    display: flex;
+}
+#nav  li{
+    display: block;
+}
+#nav li a{
+    border: 2px solid rgb(15, 14, 14);
+    color: #000;
+    background-image: linear-gradient(45deg, rgb(68, 68, 208), rgb(134, 43, 58));
+    position: relative;
+    font-size:large;
+    padding: 5px;
+    text-decoration: none;
+    border-radius: 10px;
+    
+}
+
+#day .subnav{
+    display: none;
+    /* box-shadow: 0 0 0 10px rgba(0, 0, 0, 0.3);
+   */ border-left:2px solid black ;
+   
+   border-bottom:2px solid black ; 
+
+}
+
+#nav .subnav >li > a{
+    position: absolute;
+    border: 2px solid rgb(15, 14, 14);
+    color: #000;
+    background-image: linear-gradient(45deg, rgb(127, 127, 167), rgb(228, 132, 148));
+    position: relative;
+    font-size:large;
+    padding: 5px;
+    text-decoration: none;
+    border-radius: 10px;
+
+}
+#nav .subnav li{
+    display: inline-table;  
+}
+
+#nav li:hover .subnav{
+    display: block; 
+    
+}
+ 
+
+.footer{
+    background-color: black;
+    margin-left: -4rem;
+    margin-right: -2.5rem;
+    margin-bottom: -4rem;
+    position: center;
+    height: 2rem 
+}
+.footer p{
+    text-align: center;
+}
+

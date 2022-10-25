@@ -103,12 +103,21 @@
         <div class="contact">
             <h2>Liên hệ:</h2>
             <ul>
-                <li>Hotline: 0982619918</li>
+                <li>Hotline: 0946123636</li>
+                <li>Gmail: nqson123@gmail.com</li>
                 <li id="media">
-                    <img src="images/contact-1.png" alt="contact">
-                    <img src="images/contact-2.png" alt="contact">
-                    <img src="images/contact-3.png" alt="contact">
-                    <img src="images/contact-4.png" alt="contact">
+                    <div class="contain-contact">
+                        <div>Orther: </div>
+                        <a href="https://fb.me/nguyenson0311">
+                            <img src="images/contact-1.png"alt="contact">
+                        </a>
+                        <a href="https://www.instagram.com/nqson123/">
+                            <img src="images/contact-2.png" alt="contact">
+                        </a>
+                        <a href="https://www.tiktok.com/@nqson123">
+                            <img src="images/contact-3.png" alt="contact">
+                        </a>
+                    </div>
                 </li>
             </ul>
         </div>
@@ -120,7 +129,6 @@
     var button_getCombo = document.getElementsByClassName("get-combo");
     let n = button_getCombo.length;
     var ck_clicked = sessionStorage.getItem("ck_clicked");
-    console.log(ck_clicked);
     if (ck_clicked == null) {
         ck_clicked = []
         for (let i = 0; i < n; i++) {
@@ -129,10 +137,7 @@
     }else{
         ck_clicked = ck_clicked.split(",",-1);
     }
-    console.log(ck_clicked);
     for (let i = 0; i <= n; i++) {
-        // change(button_getCombo[1])
-            console.log(ck_clicked[i])
         if (ck_clicked[i]==1) {
             change(button_getCombo[i]);
         }

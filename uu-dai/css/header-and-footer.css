@@ -17,7 +17,7 @@ footer{
 }
 footer h2{
     margin: 10px;
-    font-size: 2.5vw;
+    font-size: 30px;
 }
 footer ul{
     font-size: 18px;
@@ -32,12 +32,10 @@ footer p{
 footer :nth-child(n){
     flex: 1 1 0;
 }
-footer .contact ul li{
-    display: block;
-}
-footer .contact #media{
+footer .contact #media .contain-contact{
     display: flex;
     width: fit-content;
+    align-items: center;
 }
 footer .contact #media img{
     width: 2vw;
