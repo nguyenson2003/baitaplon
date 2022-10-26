@@ -6,6 +6,7 @@ html{
     background-repeat: no-repeat;
     background-size: 100%;
     height: auto;
+    color: white;
 }
 /* header */
 .header{
@@ -15,7 +16,7 @@ html{
     position: sticky;
     border-bottom: #222831 3px solid;
     justify-content: space-between;
-    height: 3rem;
+    height: fit-content;
     margin: -0.8rem -0.5rem 1rem -0.7rem;
 }
 .header ul li{
@@ -50,7 +51,7 @@ img{
 }
 .content > h1>a{
     text-decoration: none;
-    color: black;
+    color: white;
 }
 .content >h1>a:hover{
     color: antiquewhite;
@@ -58,11 +59,11 @@ img{
 ul li{
     list-style: none;
     font-size: 1.5rem;
-    color: #000;
+    color: white;
     
 }
 ul li a{
-    color: #000;
+    color: white;
     text-decoration: none;
     text-transform: uppercase;
     margin-left: 5rem;
@@ -79,7 +80,7 @@ ul li a{
 .nav .subnav >li > a{
     position: absolute;
     border: 2px solid rgb(15, 14, 14);
-    color: #000;
+    color: white;
     background-image: linear-gradient(45deg, rgb(127, 127, 167), rgb(228, 132, 148));
     position: relative;
     font-size:large;
@@ -108,7 +109,7 @@ button{
 .last a{
     text-decoration: none;
     font-size: 1.2rem;
-    color: #000;
+    color: white;
 }
 .xacnhan::after{
     content: "";
