@@ -4,6 +4,7 @@
 }
 html{
     font-family:  "patrick hand", Arial, Helvetica, sans-serif;
+}
 nav {
     display: flex;
     justify-content: space-between;
