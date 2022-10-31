@@ -72,7 +72,7 @@ body {
     /* background: url(./images/tải\ xuống.jpg); */
     background-size: cover;
     background-image: linear-gradient(45deg,#704b76,#393077,#070526);
-    font-family: Patrick Hand;
+    font-family: "patrick hand", Arial, Helvetica, sans-serif;
     color: #EEEEEE;
     position: relative;
 }
