@@ -131,4 +131,5 @@ button{
 .footer p{
     color: aliceblue;
     text-align: center;
+    margin: 0;
 }
